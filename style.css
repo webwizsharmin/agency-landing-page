@@ -11,13 +11,22 @@ body {
   background-color: #0a1d25;
 }
 
+.container {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/cover.jpg);
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: aliceblue;
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,4 +91,66 @@ a {
 .search-container input:focus {
   /* border: 3px solid #14bbb3; */
   box-shadow: 0 0 10px #14bbb3;
+}
+
+/* Hero contents */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  height: 80vh;
+}
+
+.hero-info h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.hero-info p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ccc;
+  margin: 1.3rem 0;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-btn .btn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  border: none;
+}
+
+.hero-btn #start {
+  background-color: #14bbb3;
+}
+
+.hero-btn #work {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+}
+
+#start:hover {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+}
+
+#work:hover {
+  background-color: #14bbb3;
+  border: none;
+  color: #0a1d25;
 }
