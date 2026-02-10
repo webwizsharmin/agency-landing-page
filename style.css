@@ -7,9 +7,9 @@
   font-family: "poppins", sans-serif;
 }
 
-body {
+/* body {
   background-color: #0a1d25;
-}
+} */
 
 .container {
   background-image:
@@ -18,6 +18,7 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  /* border-radius: 8px; */
 }
 
 a {
@@ -26,7 +27,7 @@ a {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,7 +105,7 @@ a {
   text-align: center;
   margin-top: 1.5rem;
   gap: 1rem;
-  height: 80vh;
+  height: 85vh;
 }
 
 .hero-info h1 {
@@ -153,4 +154,50 @@ a {
   background-color: #14bbb3;
   border: none;
   color: #0a1d25;
+}
+
+/* Service Section  */
+.service {
+  margin: 25px 5%;
+}
+
+.service h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  height: 250px;
+  text-align: center;
+  box-shadow: 0 0 0.5rem #888;
+}
+
+.card:hover {
+  border: 1px solid #14bbb3;
+  box-shadow: 0 0 0.5rem #14bbb3;
+}
+.card i {
+  font-size: 3rem;
+  color: #14bbb3;
+  /* margin: 1rem; */
+}
+
+.card p {
+  margin-top: 0.5rem;
 }
