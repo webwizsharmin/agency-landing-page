@@ -159,12 +159,17 @@ a {
 /* Service Section  */
 .service {
   margin: 25px 5%;
+  /* background-color: whitesmoke; */
 }
 
-.service h2 {
+.service h2,
+.testimonial h2 {
   text-transform: capitalize;
   font-size: 2rem;
   font-weight: 600;
+  margin: 3rem;
+  text-align: center;
+  text-decoration: underline #14bbb3;
 }
 
 .service-container {
@@ -172,7 +177,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 
   gap: 20px;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .card {
@@ -188,7 +193,8 @@ a {
   box-shadow: 0 0 0.5rem #888;
 }
 
-.card:hover {
+.card:hover,
+.test-card:hover {
   border: 1px solid #14bbb3;
   box-shadow: 0 0 0.5rem #14bbb3;
 }
@@ -200,4 +206,97 @@ a {
 
 .card p {
   margin-top: 0.5rem;
+}
+
+/* Testimonials section */
+.testimonial {
+  background-color: rgba(238, 238, 238, 0.4);
+  /* margin: 3rem; */
+  /* height: 100vh; */
+}
+.test-info h2 {
+  text-decoration: none;
+  margin-top: 3em;
+  padding: 2em 0;
+}
+
+.testimonial span {
+  background-color: #14bbb3;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  color: aliceblue;
+}
+
+.test-info p {
+  text-align: center;
+  margin-top: -6em;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+  /* max-width: 800px; */
+  gap: 1.5rem;
+  padding: 5rem;
+  margin-top: -2rem;
+}
+
+.test-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #0a1d25;
+}
+
+.test-card img {
+  height: 40px;
+}
+
+#vix {
+  height: 1rem;
+  margin: 10px;
+}
+
+#hbo {
+  height: 4rem;
+}
+
+.test-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.bxs-star {
+  color: #14bbb3;
+}
+
+.test-card p {
+  margin: 1rem 0;
+  color: #666;
+  font-weight: 400;
+}
+
+.user p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: -0.3rem;
+}
+
+#disney {
+  margin: 0 0.5rem 1rem 0;
+  transform: rotate(4deg);
+  box-shadow: 0 0 10px #0a1d25;
+}
+
+#disney:hover {
+  box-shadow: 0 0 10px #14bbb3;
 }
