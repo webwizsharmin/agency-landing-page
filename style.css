@@ -300,3 +300,86 @@ a {
 #disney:hover {
   box-shadow: 0 0 10px #14bbb3;
 }
+
+.price {
+  margin: 1.5rem 1rem;
+  padding: 1.5rem;
+}
+
+.individuals {
+  border: 1px solid #0a1d25;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px #0a1d25;
+}
+.price-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+  gap: 3rem;
+  padding: 2rem;
+  margin: 1rem 1rem;
+}
+
+.price-card h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* margin-bottom: rem; */
+  color: #555;
+}
+
+.price-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #666;
+  margin: 1rem;
+}
+
+.price-card-info span {
+  font-size: 2rem;
+  color: #0a1d25;
+  font-weight: 600;
+}
+
+.price-card button {
+  padding: 0.5rem 6rem;
+  /* width: 90%; */
+  color: #14bbb3;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 0 1px 5px #0a1d25;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.price-card hr {
+  color: #555;
+  opacity: 0.5;
+  margin: 1rem auto;
+  width: 92%;
+}
+
+.price-card ul {
+  list-style: "✓";
+  padding: 1rem;
+}
+
+.price-card li::marker {
+  color: #14bbb3;
+  font-size: 1.2rem;
+}
+
+#unique {
+  background-color: #14bbb3;
+  color: #0a1d25;
+}
+
+.price h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.price h3 + p {
+  text-align: center;
+}
