@@ -209,7 +209,8 @@ a {
 }
 
 /* Testimonials section */
-.testimonial {
+.testimonial,
+footer {
   background-color: rgba(238, 238, 238, 0.4);
   /* margin: 3rem; */
   /* height: 100vh; */
@@ -382,4 +383,77 @@ a {
 
 .price h3 + p {
   text-align: center;
+}
+
+/* footer area */
+
+footer {
+  padding: 2rem;
+}
+
+.footer-attached {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo-link .logo {
+  color: #0a1d25;
+  margin: 2rem;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.download i {
+  font-size: 2.5rem;
+  color: #14bbb3;
+}
+
+.apple-store,
+.play-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-info p + p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* .home-link {
+  display: flex;
+  align-items: center;
+} */
+
+.links {
+  display: flex;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+.home-link li {
+  list-style-type: none;
+}
+
+.home-link a {
+  text-decoration: none;
+  color: #0a1d25;
+}
+
+footer hr {
+  padding: 1.5px;
+  background-color: #14bbb3;
+  margin: 2rem 0 0.5rem;
+}
+
+footer h6 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
 }
